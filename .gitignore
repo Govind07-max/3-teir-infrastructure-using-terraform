@@ -1,0 +1,39 @@
+# Ignore local Terraform state & cache directories
+.terraform/
+**/.terraform/*
+
+# Ignore Terraform state files
+terraform.tfstate
+terraform.tfstate.*
+*.tfstate.backup
+
+# Lock file (provider dependency versions)
+.terraform.lock.hcl
+
+# Ignore backend config if it contains sensitive info
+backend.tf
+
+# Ignore TLS and keys if generated
+*.pem
+*.key
+
+# Ignore variable definition files (if containing secrets)
+*.tfvars
+*.tfvars.json
+
+# Logs & crash files
+crash.log
+crash.*.log
+
+# IDE / Editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# AWS CLI temporary zip (you have this file)
+awscliv2.zip
+
+# OS generated garbage
+.DS_Store
+Thumbs.db
